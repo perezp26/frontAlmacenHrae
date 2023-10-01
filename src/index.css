@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: small;
+}
+
+/* Datepicker */
+.react-date-picker input:focus {
+    outline: none;
+}
+
+.react-datetime-picker__wrapper {
+    border: 0px solid gray !important;
+  }
+
+  .calendar-screen{
+    display: flex;
+   flex-flow: column; 
+   height: 100vh;
+}
+
+.rbc-calendar{
+    height: 100%; 
+}
+
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 1600px;
+    min-width: 1200px;
+    outline: none;
+    padding: 15px;
+}
+
+
+/* Date Picker
+.react-daletiem-picker input:focus{
+    outline: none;
+}
+
+.react-datetime-picker__wrapper{
+    border: 0px solid gray;
+} */
+
+/* FABS */
+.fab{
+    border-radius: 100%;
+    bottom: 35px;
+    padding: 15px;
+    font-size:25px; 
+    position:  fixed;
+    right: 35px;
+ }
+ 
+ .fab-top{
+  border-radius: 100%;
+  top: 35px;
+  /* padding: 15px; */
+  padding: 3px 10px 3px 10px;
+  font-size:25px; 
+  position:  fixed;
+  right: 35px;
+}
+
+ /* spinner */
+ .spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 5px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
